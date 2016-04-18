@@ -1,0 +1,36 @@
+﻿header {
+  background-color: #454B5E;
+  border-bottom: thick solid #000000;
+}
+body {
+  background-color: #121624;
+}
+h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  float: auto;
+  text-align: center;
+}
+.navbar-default {
+  background-color: #454B5E;
+  border-width: 0px;
+  font-color: #FFFFFF;
+  margin-top: 20px;
+}
+.nav.navbar-nav.navbar-right li a {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+.gradient-line { 
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+  margin-bottom: 20px;
+    background: white;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#121624));
+}
