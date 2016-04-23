@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,700,400,100|Lato|Open+Sans:400,300|Oswald" rel="stylesheet prefetch" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet prefetch">
-    <link href="assets/css/jquery.gridder.min.css" rel="stylesheet prefetch"/>
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="./assets/css/jquery.gridder.min.css" rel="stylesheet prefetch"/>
+    <link href="./assets/css/main.css" rel="stylesheet prefetch" />
 </head>
 
 <body>
@@ -253,7 +253,33 @@
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="./assets/scripts/jquery.gridder.js"></script>
+        <script src="./assets/js/jquery.gridder.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".dropdown-toggle").dropdown();
+
+                // Call Gridder
+                $(".gridder").gridderExpander({
+                    scrollOffset: 60,
+                    scrollTo: "panel", // "panel" or "listitem"
+                    animationSpeed: 400,
+                    animationEasing: "easeInOutExpo",
+                    onStart: function () {
+                        console.log("Gridder Inititialized");
+                    },
+                    onExpanded: function (object) {
+                        console.log("Gridder Expanded");
+                        $(".carousel").carousel();
+                    },
+                    onChanged: function (object) {
+                        console.log("Gridder Changed");
+                    },
+                    onClosed: function () {
+                        console.log("Gridder Closed");
+                    }
+                });
+            });
+        </script>
 
     </body>
 </body>

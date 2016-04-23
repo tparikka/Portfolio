@@ -77,8 +77,8 @@
   <ItemGroup>
     <Content Include="assets\css\jquery.gridder.min.css" />
     <Content Include="assets\css\main.css" />
-    <Content Include="assets\scripts\jquery.gridder.js" />
-    <Content Include="assets\scripts\scripts.js" />
+    <Content Include="assets\js\jquery.gridder.js" />
+    <Content Include="assets\js\scripts.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
