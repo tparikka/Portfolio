@@ -1,99 +1,144 @@
 ﻿/*=======Body=======
 */
 header {
-  background-color: #454B5E;
-  border-bottom: thick solid #000000;
+    background-color: #454B5E;
+    border-bottom: thick solid #000000;
 }
+
 body {
-  background-color: #121624;
+    background-color: #121624;
 }
+
 h1 {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  float: auto;
-  text-align: center;
-  margin-bottom: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
+
 h2 {
     font-family: 'Roboto', sans-serif;
 }
+
 h5 {
     font-style: italic;
 }
+
 p {
     text-align: left;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+#about > h1 {
+    color: #121624;
+}
+
+.profile {
+    max-width: 300px;
+    margin-top: 20px;
 }
 /*=======Navbar=======*/
 .navbar-default {
-  background-color: #454B5E;
-  border-width: 0px;
-  font-color: #FFFFFF;
-  margin-top: 20px;
+    background-color: #454B5E;
+    border-width: 0px;
+    color: #FFFFFF;
+    margin-top: 20px;
 }
+
 .navbar {
     margin: 0;
     padding: 7.5px 15px;
 }
+
 .nav.navbar-nav.navbar-right li a {
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
+
 .navbar-default .navbar-brand {
-  color: #FFFFFF;
+    color: #FFFFFF;
 }
 /*=======Gradient Line=======*/
-.gradient-line { 
-    display:block;
-    border:none;
-    color:white;
-    height:1px;
-  margin-bottom: 20px;
+.gradient-line {
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    margin-bottom: 20px;
     background: white;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#121624));
 }
+#about > .gradient-line {
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    margin-bottom: 20px;
+    background: white;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#121624), to(#fff));
+}
 /*=======Gridder Modifications=======*/
-.gridder-navigation{
+.gridder-navigation {
     text-align: right;
     padding-right: 20px;
     margin-bottom: -10px;
     background-color: white;
 }
+
 .gridder-expanded-content {
     color: black;
     background-color: white;
+    padding-right: 10px;
 }
 
-div:nth-child(1) > img {
+.img-gridder-full {
     margin-bottom: 10px;
     margin-left: 10px;
+    margin-right: 10px;
     max-width: 90%;
 }
+
 .gridder {
     text-align: center;
 }
+
+.gridder-list {
+    width: 25%;
+}
+
 .img-gridder {
     border-radius: 10px;
     background-color: #52576A;
+    display: inline;
+    max-height: 250px;
+    max-width: 250px;
 }
 /*=========== Hover Effects ===========*/
 .overlay {
-  color: #fff;
-  position: relative;
-  padding-top: 10px;
-  top: -62px;
-  background-color: rgba(1, 1, 1, 0.7);
-  height: 46px;
-  opacity: 0;
-  -webkit-transform: translateY(45px);
-  -moz-transform: translateY(45px);
-  transform: translateY(45px);
-  -webkit-transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s; }
+    color: #fff;
+    position: relative;
+    padding-top: 10px;
+    top: -62px;
+    background-color: rgba(1, 1, 1, 0.7);
+    height: 46px;
+    opacity: 0;
+    -webkit-transform: translateY(45px);
+    -moz-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
 
 .og-grid a:hover .overlay {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  transform: translateY(0); }
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+}
