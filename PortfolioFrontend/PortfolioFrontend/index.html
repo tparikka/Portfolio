@@ -31,10 +31,10 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="#">QA</a></li>
-                                    <li><a href="#">DEV</a></li>
-                                    <li><a href="#">ABOUT</a></li>
-                                    <li><a href="#">CONTACT</a></li>
+                                    <li><a href="#qa">QA</a></li>
+                                    <li><a href="#dev">DEV</a></li>
+                                    <li><a href="#about">ABOUT</a></li>
+                                    <li><a href="#contact">CONTACT</a></li>
                                 </ul>
                             </div><!-- /.navbar-collapse -->
                         </div><!-- /.container-fluid -->
@@ -45,63 +45,49 @@
     </header>
     <main>
         <div class="container">
-
-            <div>
+            <div id="qa">
                 <h1>QA</h1>
                 <span class="gradient-line"></span>
                 <ul class="gridder" name="gridder-qa">
                     <li class="gridder-list" data-griddercontent="#qa-content-1">
-                        <img src="http://placehold.it/400x400&text=Item 1" class="img-responsive" />
+                        <img src="./assets/img/ServUThumb.png" class="img-gridder img-responsive" />
                     </li>
-                    <!--
-                      -->
                     <li class="gridder-list" data-griddercontent="#qa-content-2">
-                        <img src="http://placehold.it/400x400&text=Item 2" class="img-responsive" />
-                    </li>
-                    <!--
-                      -->
-                    <li class="gridder-list" data-griddercontent="#qa-content-3">
-                        <img src="http://placehold.it/400x400&text=Item 3" class="img-responsive" />
+                        <img src="./assets/img/MBotThumb.png" class="img-gridder img-responsive" />
                     </li>
                 </ul>
             </div>
-            <div>
+            <div id="dev">
                 <h1>DEV</h1>
                 <span class="gradient-line"></span>
                 <ul class="gridder" name="gridder-dev">
                     <li class="gridder-list" data-griddercontent="#dev-content-1">
-                        <img src="http://placehold.it/400x400&text=Item 1" class="img-responsive" />
+                        <img src="http://placehold.it/400x400&text=Item 1" class="img-gridder img-responsive" />
                     </li>
-                    <!--
-            -->
                     <li class="gridder-list" data-griddercontent="#dev-content-2">
-                        <img src="http://placehold.it/400x400&text=Item 2" class="img-responsive" />
-                    </li>
-                    <!--
-            -->
-                    <li class="gridder-list" data-griddercontent="#dev-content-3">
-                        <img src="http://placehold.it/400x400&text=Item 3" class="img-responsive" />
+                        <img src="http://placehold.it/400x400&text=Item 2" class="img-gridder img-responsive" />
                     </li>
                 </ul>
             </div>
-
+            <div id="about">
+                <h1>About</h1>
+                <span class="gradient-line"></span>
+            </div>
+            <div id="contact">
+                <h1>Contact</h1>
+                <span class="gradient-line"></span>
+            </div>
             <div id="qa-content-1" class="gridder-content">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
-                        <img src="http://placehold.it/500x500" class="img-responsive" />
+                        <img src="./assets/img/ServUFull.png" class="img-responsive" />
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <h2>Item 1</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex augue, hendrerit sed gravida ut, mattis vel tortor. Duis hendrerit sagittis bibendum. Fusce massa risus, hendrerit et est vitae, convallis accumsan ipsum. Integer vitae erat
-                            mattis, ornare tortor nec, luctus turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse finibus fermentum consectetur. Nulla vestibulum, diam ut finibus dictum, justo felis blandit mi, sed
-                            rhoncus tortor augue vitae orci. Fusce semper eu ante ut faucibus.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex augue, hendrerit sed gravida ut, mattis vel tortor. Duis hendrerit sagittis bibendum. Fusce massa risus, hendrerit et est vitae, convallis accumsan ipsum. Integer vitae erat
-                            mattis, ornare tortor nec, luctus turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse finibus fermentum consectetur. Nulla vestibulum, diam ut finibus dictum, justo felis blandit mi, sed
-                            rhoncus tortor augue vitae orci. Fusce semper eu ante ut faucibus.
-                        </p>
+                        <h2>Serv-U File Server</h2>
+                        <h5>07/2007-12/2012</h5>
+                        <p>I created the first formal QA program at RhinoSoft (now SolarWinds), designing test plans and matrices for the Serv-U File Server and FTP Voyager file transfer platforms. As the test plans and procedures matured I also managed collaborative testing performed by development staff, technical support representatives and web developers as part of an Agile development team.</p>
+                        <p>During my tenure as QA Analyst for RhinoSoft I performed testing of the comprehensive re-writes of the Serv-U File Server in 2008 and the FTP Voyager file transfer client in 2012 using Agile development methodologies in a flat organization. I also worked directly with clients to reproduce defects and provide reports to management. To facilitate this, I implemented the company's first defect/feature tracking and customer support systems, providing metrics to drive development efforts. Using these systems I assisted the business in driving development based on feature demand and drafted requirements documents based on customer requests. Upon acquisition by SolarWinds in 2012 I assisted the offshore QA team in becoming familiar with the product and current testing methodologies.</p>
+                        <p>From 2012 to 2014, I assumed a role in Sales Engineering, providing subject matter expertise on the solution to facilitate rapid sales velocity by internal and external sales teams.</p>
                     </div>
                 </div>
             </div>
@@ -111,37 +97,10 @@
                         <img src="http://placehold.it/500x500" class="img-responsive" />
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <h2>Item 2</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex augue, hendrerit sed gravida ut, mattis vel tortor. Duis hendrerit sagittis bibendum. Fusce massa risus, hendrerit et est vitae, convallis accumsan ipsum. Integer vitae erat
-                            mattis, ornare tortor nec, luctus turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse finibus fermentum consectetur. Nulla vestibulum, diam ut finibus dictum, justo felis blandit mi, sed
-                            rhoncus tortor augue vitae orci. Fusce semper eu ante ut faucibus.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex augue, hendrerit sed gravida ut, mattis vel tortor. Duis hendrerit sagittis bibendum. Fusce massa risus, hendrerit et est vitae, convallis accumsan ipsum. Integer vitae erat
-                            mattis, ornare tortor nec, luctus turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse finibus fermentum consectetur. Nulla vestibulum, diam ut finibus dictum, justo felis blandit mi, sed
-                            rhoncus tortor augue vitae orci. Fusce semper eu ante ut faucibus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="qa-content-3" class="gridder-content">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <img src="http://placehold.it/500x500" class="img-responsive" />
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <h2>Item 3</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex augue, hendrerit sed gravida ut, mattis vel tortor. Duis hendrerit sagittis bibendum. Fusce massa risus, hendrerit et est vitae, convallis accumsan ipsum. Integer vitae erat
-                            mattis, ornare tortor nec, luctus turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse finibus fermentum consectetur. Nulla vestibulum, diam ut finibus dictum, justo felis blandit mi, sed
-                            rhoncus tortor augue vitae orci. Fusce semper eu ante ut faucibus.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex augue, hendrerit sed gravida ut, mattis vel tortor. Duis hendrerit sagittis bibendum. Fusce massa risus, hendrerit et est vitae, convallis accumsan ipsum. Integer vitae erat
-                            mattis, ornare tortor nec, luctus turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse finibus fermentum consectetur. Nulla vestibulum, diam ut finibus dictum, justo felis blandit mi, sed
-                            rhoncus tortor augue vitae orci. Fusce semper eu ante ut faucibus.
-                        </p>
+                        <h2>Mortgagebot LOS</h2>
+                        <h5>01/2015-Present</h5>
+                        <p>Mortgagebot LOS (Loan Origination Software) is a fully featured loan origination platform developed by D+H. It includes powerful tools used to help lenders meet regulatory requirements and pass audits, provides essential integrations with many third party providers, and works with point-of-sale loan software to provide lenders with comprehensive lead and loan management through the entire lifetime of the lending process. As a QA Analyst for D+H Mortgagebot I am responsible for software quality throughout the development process from review of user stories to the successful deployment of code in production. In my time at Mortgagebot we have transitioned from Waterfall development to working as a cross-functional Scrum Agile team utilizing the Scrum development model.</p>
+                        <p>In my first year at D+H I was a key member of the team that brought the LOS up to compliance in time for the TILA/RESPA regulatory change in October 2015, beating several major competitors in the market to provide a fully compliant LOS solution and continuing to rapidly iterate on improvements and adjustments during the remainder of the calendar year.</p>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,6 @@
-﻿header {
+﻿/*=======Body=======
+*/
+header {
   background-color: #454B5E;
   border-bottom: thick solid #000000;
 }
@@ -12,6 +14,17 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+h5 {
+    font-style: italic;
+}
+p {
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+/*=======Navbar=======*/
 .navbar-default {
   background-color: #454B5E;
   border-width: 0px;
@@ -30,6 +43,7 @@ h1 {
 .navbar-default .navbar-brand {
   color: #FFFFFF;
 }
+/*=======Gradient Line=======*/
 .gradient-line { 
     display:block;
     border:none;
@@ -39,6 +53,7 @@ h1 {
     background: white;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#121624));
 }
+/*=======Gridder Modifications=======*/
 .gridder-navigation{
     text-align: right;
     padding-right: 20px;
@@ -50,8 +65,35 @@ h1 {
     background-color: white;
 }
 
-/*div:nth-child(1) > img {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}*/
+div:nth-child(1) > img {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    max-width: 90%;
+}
+.gridder {
+    text-align: center;
+}
+.img-gridder {
+    border-radius: 10px;
+    background-color: #52576A;
+}
+/*=========== Hover Effects ===========*/
+.overlay {
+  color: #fff;
+  position: relative;
+  padding-top: 10px;
+  top: -62px;
+  background-color: rgba(1, 1, 1, 0.7);
+  height: 46px;
+  opacity: 0;
+  -webkit-transform: translateY(45px);
+  -moz-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s; }
+
+.og-grid a:hover .overlay {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0); }
