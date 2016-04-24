@@ -150,8 +150,8 @@
                 if(settings.showNav){
                     
                     /* CHECK IF PREV AND NEXT BUTTON HAVE ITEMS */
-                    var prevItem = ($(".selectedItem").prev());
-                    var nextItem = ($(".selectedItem").next().next());
+                    //var prevItem = ($(".selectedItem").prev());
+                    //var nextItem = ($(".selectedItem").next().next());
                     
                     htmlcontent += "<div class=\"gridder-navigation\">";
                     htmlcontent += "<a href=\"#\" class=\"gridder-close\"><i class=\"fa fa-times fa-3x\" aria-hidden=\"true\"></i></a>";
