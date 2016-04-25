@@ -7,6 +7,8 @@ header {
 
 body {
     background-color: #121624;
+    background-image: url('../img/darkgreyrepeatbackground.jpg');
+    background-repeat: round;
 }
 
 h1 {
@@ -34,11 +36,20 @@ p {
     padding-bottom: 30px;
     background-color: white;
 }
+#contact {
+    margin-bottom: 40px;
+}
+#contactinfo {
+    border-radius: 20px;
+    background-color: #ffffff;
+}
 
 #about > h1 {
     color: #121624;
 }
-
+.logo {
+    max-height: 70px;
+}
 .profile {
     max-width: 300px;
     margin-top: 20px;
@@ -73,7 +84,7 @@ p {
     height: 1px;
     margin-bottom: 20px;
     background: white;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#121624));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#303030));
 }
 #about > .gradient-line {
     display: block;
