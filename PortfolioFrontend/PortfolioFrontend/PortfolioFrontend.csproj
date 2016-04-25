@@ -78,6 +78,11 @@
     <Content Include="assets\img\seleniumlogo.png" />
     <Content Include="assets\img\ServUFull.png" />
     <Content Include="assets\img\ServUThumb.png" />
+    <Content Include="assets\font-mfizz\font-mfizz.css" />
+    <Content Include="assets\font-mfizz\font-mfizz.eot" />
+    <Content Include="assets\font-mfizz\font-mfizz.svg" />
+    <Content Include="assets\font-mfizz\font-mfizz.ttf" />
+    <Content Include="assets\font-mfizz\font-mfizz.woff" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
