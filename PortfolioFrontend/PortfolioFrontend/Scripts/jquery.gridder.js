@@ -84,7 +84,7 @@
             }
             
             // OPEN EXPANDER
-            function openExpander(myself) {
+            function openExpander(myself, endoflist) {
                 
                 /* CURRENT ACTIVE GRIDDER */
                 $(".currentGridder").removeClass("currentGridder");
@@ -113,7 +113,13 @@
 
                 /* ADD LOADING BLOC */
                 var $htmlcontent = $("<div class=\"gridder-show loading\"></div>");
-                mybloc = $htmlcontent.insertAfter(myself);
+                if ($(window).width() > 739) {
+                    mybloc = $htmlcontent.insertAfter(endoflist);
+                }
+                else {
+                    mybloc = $htmlcontent.insertAfter(myself);
+                }
+                
                 
                 /* GET CONTENT VIA AJAX OR #ID*/
                 var thecontent = "";
@@ -150,11 +156,12 @@
                 if(settings.showNav){
                     
                     /* CHECK IF PREV AND NEXT BUTTON HAVE ITEMS */
-                    //var prevItem = ($(".selectedItem").prev());
-                    //var nextItem = ($(".selectedItem").next().next());
+                    var prevItem = ($(".selectedItem").prev());
+                    var nextItem = ($(".selectedItem").next().next());
                     
                     htmlcontent += "<div class=\"gridder-navigation\">";
                     htmlcontent += "<a href=\"#\" class=\"gridder-close\"><i class=\"fa fa-times fa-3x\" aria-hidden=\"true\"></i></a>";
+                    //htmlcontent += "<a href=\"#\" class=\"gridder-close\">" + settings.closeText + "</a>";
                     //htmlcontent += "<a href=\"#\" class=\"gridder-nav prev "+(!prevItem.length?"disabled":"")+"\">"+settings.prevText+"</a>";
                     //htmlcontent += "<a href=\"#\" class=\"gridder-nav next "+(!nextItem.length?"disabled":"")+"\">"+settings.nextText+"</a>";
                     htmlcontent += "</div>";
@@ -199,6 +206,14 @@
                 /* REMOVE LOADING CLASS */
                 mybloc.removeClass("loading");
             }
+
+            /* CLICK EVENT Mod Attempt*/
+            _this.on("click", ".gridder-control", function (e) {
+                e.preventDefault();
+                var myself = $(this);
+                var endoflist = $(this).parent().children().last();
+                openExpander(myself, endoflist);
+            });
             
             /* CLICK EVENT */
             _this.on("click", ".gridder-list", function (e) {
