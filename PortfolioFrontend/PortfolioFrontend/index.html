@@ -178,6 +178,14 @@
         <script>
             $(document).ready(function () {
                 $(".dropdown-toggle").dropdown();
+                
+                //Add smooth scrolling
+                $('a').click(function(){
+                    $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                    }, 500);
+                    return false;
+                });
 
                 // Call Gridder
                 $('[name=gridder-qa], [name=gridder-dev]').gridderExpander({
