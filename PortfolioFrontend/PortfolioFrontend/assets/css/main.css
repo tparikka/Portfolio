@@ -112,6 +112,7 @@ p {
 .img-gridder {
     border-radius: 10px;
     background-color: #52576A;
+    cursor: pointer;
 }
 
 .gridder-row > div {
