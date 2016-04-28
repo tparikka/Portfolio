@@ -82,10 +82,10 @@
             </div>
             <div id="qa-content-2" class="gridder-content">
                 <div class="row">
-                    <!--<div class="col-xs-12 col-md-6">
-                        <img src="http://placehold.it/500x500" class="img-responsive" />
-                    </div>-->
-                    <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <div class="col-xs-12 col-md-6">
+                        <a href="http://www.dh.com/lending/mortgage-lending/mortgagebotlos" target="_blank"><img src="./assets/img/MBot.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
                         <a href="http://http://www.dh.com/lending/mortgage-lending/mortgagebotlos"><h2>Mortgagebot LOS</h2></a>
                         <h5>01/2015-Present</h5>
                         <p>Mortgagebot LOS (Loan Origination Software) is a fully featured loan origination platform developed by D+H. It includes powerful tools used to help lenders meet regulatory requirements and pass audits, provides essential integrations with many third party providers, and works with point-of-sale loan software to provide lenders with comprehensive lead and loan management through the entire lifetime of the lending process. As a QA Analyst for D+H Mortgagebot I am responsible for software quality throughout the development process from review of user stories to the successful deployment of code in production. In my time at Mortgagebot we have transitioned from Waterfall development to working as a cross-functional Scrum Agile team utilizing the Scrum development model.</p>
@@ -178,6 +178,14 @@
         <script>
             $(document).ready(function () {
                 $(".dropdown-toggle").dropdown();
+                
+                //Add smooth scrolling
+                $('a').click(function(){
+                    $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                    }, 500);
+                    return false;
+                });
 
                 // Call Gridder
                 $('[name=gridder-qa], [name=gridder-dev]').gridderExpander({
