@@ -69,13 +69,11 @@
     <Content Include="assets\img\bootstraplogo.png" />
     <Content Include="assets\img\darkgreyrepeatbackground.jpg" />
     <Content Include="assets\img\greyrepeatbackground.jpg" />
-    <Content Include="assets\img\jQueryLogo.png" />
-    <Content Include="assets\img\jslogo.png" />
     <Content Include="assets\img\JuNu.png" />
     <Content Include="assets\img\JuNuThumb.png" />
+    <Content Include="assets\img\MBot.png" />
     <Content Include="assets\img\MBotThumb.png" />
     <Content Include="assets\img\Profile.png" />
-    <Content Include="assets\img\seleniumlogo.png" />
     <Content Include="assets\img\ServUFull.png" />
     <Content Include="assets\img\ServUThumb.png" />
     <Content Include="assets\font-mfizz\font-mfizz.css" />
