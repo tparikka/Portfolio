@@ -71,6 +71,8 @@
     <Content Include="assets\img\greyrepeatbackground.jpg" />
     <Content Include="assets\img\JuNu.png" />
     <Content Include="assets\img\JuNuThumb.png" />
+    <Content Include="assets\img\RandomQuoteGeneratorThumb.png" />
+    <Content Include="assets\img\RandomQuoteGeneratorFull.png" />
     <Content Include="assets\img\MBot.png" />
     <Content Include="assets\img\MBotThumb.png" />
     <Content Include="assets\img\Profile.png" />
